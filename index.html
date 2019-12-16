@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>심경 마이맥 통합서버</title>
+	<style>
+		body {
+      margin:0px;
+			font-size:1.3em;
+			text-align: center;
+		}
+    #boxing{
+      margin-left:37%;
+      width:25%;
+      height:100%;
+      border: 5px solid black;
+    }
+    big {
+      color:black;
+    }
+    #sd {
+      color:blue;
+    }
+  </style>
+</head>
+<body>
+    <script>
+        var User = "회원";
+          var admin;
+          var admin2;
+          var admin3;
+          admin = "박경수";
+          admin2 = "조동준";
+          admin3 = "안태규";
+          admin4 = "User";
+          var password;
+          var password2;
+          var password3;
+          password = "123456";
+          password2 = "cho11255";
+          password3 = "test";
+          password4 = "User";
+              name=prompt("이름을 입력해주세요.");
+              if(name != admin && name != admin2 && name != admin3 && name != admin4) {
+          alert("이름을 제대로 입력해 주세요."); 
+             document.write("사이트를 제접속 해주세요.");
+          } 
+      else if(name == admin || name == admin2 || name == admin3 || name == User){
+           var passwordcheck = prompt("비밀번호를 입력해주세요");
+          if(name == admin) {
+            if(passwordcheck == password) {
+                 alert("[관리자]"+name + "님 로그인 성공하였습니다!");
+             document.querySelector("#name").innerHTML = "<b><big>"+ name + "</b></big>님 어서오세요!";
+                 document.querySelector("#site").innerHTML = "<a href= index-1.html><br><big>"+"심경마이맥"+ "</big></a></br>"+"<sd>"+"사이트 바로가기"+"</sd>";
+             } else {
+                 alert("비밀번호가 틀림");
+             document.write("사이트를 제접속 해주세요.");
+             }
+          } else if(name == admin2) {
+             if(passwordcheck == password2) {
+             alert("[관리자]"+name + "님 로그인 성공하였습니다!");
+             document.querySelector("#name").innerHTML = "<b><big>"+ name + "</b></big>님 어서오세요!";
+                 document.querySelector("#site").innerHTML = "<a href= index-1.html><br><big>"+"심경마이맥"+ "</big></a></br>"+"<sd>"+"사이트 바로가기"+"</sd>";
+             } else {
+                 alert("비밀번호가 틀림");
+             document.write("사이트를 제접속 해주세요.");
+             }
+          }
+        else if(name == admin3) {
+             if(passwordcheck == password3) {
+             alert("[관리자]"+name + "님 로그인 성공하였습니다!");
+             document.querySelector("#name").innerHTML = "<b><big>"+ name + "</b></big>님 어서오세요!";
+             document.querySelector("#site").innerHTML = "<a href= index-1.html><br><big>"+"심경마이맥"+ "</big></a></br>"+"<sd>"+"사이트 바로가기"+"</sd>";
+             } else {
+                 alert("비밀번호가 틀림");
+             document.write("사이트를 제접속 해주세요.");
+             }
+      }
+      else if(name == admin4) {
+             if(passwordcheck == password4) {
+             alert(name + "님 로그인 성공하였습니다!");
+             document.querySelector("#name").innerHTML = "<b><big>"+ name + "</b></big>님 어서오세요!";
+             document.querySelector("#site").innerHTML = "<a href= index-1.html><br><big>"+"심경마이맥"+ "</big></a></br>"+"<sd>"+"사이트 바로가기"+"</sd>";
+             } else {
+             alert("비밀번호가 틀림");
+             document.write("사이트를 제접속 해주세요.");
+             }
+      }
+      else {
+             alert("알수 없는 오류 발생")
+          }
+      }
+      
+      </script>
+  <h1>심경 마이맥</h1>
+  <div id="name"></div>
+  <div id="boxing">
+      <div id="site"><a href= index-1.html><br><big>심경마이맥</big></a></br><sd>사이트 바로가기</sd>"</div>
+      <div id="img">
+        
+        <img src="마이맥 로고.png" style="width:350px; height:100px;"></div>
+  </div>
+
+</body>
+</html>
