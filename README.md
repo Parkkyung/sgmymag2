@@ -1,0 +1,1 @@
+# sgmymag2
